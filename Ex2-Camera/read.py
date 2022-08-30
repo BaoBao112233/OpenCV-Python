@@ -1,6 +1,7 @@
 import cv2 
-
-cam = cv2.VideoCapture("F:\OpenCV\OpenCV-Python\Ex2-Camera\sample.avi")
+import imutils
+camera_id = "F:\OpenCV\OpenCV-Python\Ex2-Camera\sample.avi"
+cam = cv2.VideoCapture(0)
 while True:
     ret, frame = cam.read()
     cv2.imshow("Cam", frame)

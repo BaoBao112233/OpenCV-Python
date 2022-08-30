@@ -26,3 +26,26 @@ while (True):
 
 Giải phóng camera:
 cam.release()
+
+Hàm lưu ảnh: 
+cv2.imwrite("đặt tên file", biến chứa file)
+
+Hệ màu trong Open CV (BGR)
+
+Hàm Conver hệ màu của ảnh:
+cv2.cvtColor(image, cv2.BGR)
+
+Hàm resize ảnh:
+cv2. resize(biến chứa ảnh, dsize = (n,m)) 
+resize ảnh về kích thước n.m
+
+Xoay ảnh:
+Download imutils: pip install imutils
+
+imutils.rotate(biến chứa ảnh, qóc quay(radian))
+
+Hàm threshold:
+cv2.threshold(biến ảnh, b - ngưỡng, a - quy ước, Chế độ )
+
+Nếu x(màu của điểm ảnh) > b thì return x = a
+Nếu x <= b thì return x = 0
