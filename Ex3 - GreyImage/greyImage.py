@@ -25,4 +25,13 @@ cv2.waitKey()
 ret, threshold = cv2.threshold(grey_image,127,255,cv2.THRESH_BINARY)
 cv2.imshow('Ảnh threshold', threshold)
 cv2.waitKey()
+
+rett, adaptiveThreshold1 = cv2.adaptiveThreshold(grey_image,255,127,cv2.ADAPTIVE_THRESH_MEAN_C,0,0)
+cv2.imshow('Ảnh Adapthreshold MEAN', adaptiveThreshold1)
+cv2.waitKey()
+
+rett, adaptiveThreshold2 = cv2.adaptiveThreshold(grey_image,255,127,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,0,0)
+cv2.imshow('Ảnh Adapthreshold GAUSSIAN', adaptiveThreshold2)
+cv2.waitKey()
+
 cv2.destroyAllWindows()
